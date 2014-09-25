@@ -1,0 +1,47 @@
+1. 
+In [1]: import os, os.path
+In [2]: os.path.abspath?
+Type:       function
+String Form:<function abspath at 0x7f7beee1f9b0>
+File:       /usr/lib/python2.7/posixpath.py
+Definition: os.path.abspath(path)
+Docstring:  Return an absolute path.
+
+
+2.
+In [3]: num = int(os.popen('ls /etc|wc -l').read())
+In [4]: num
+Out[4]: 232
+
+
+3.
+In [5]: num**0.5
+Out[5]: 15.231546211727817
+
+
+4.
+The fastest is x*x
+
+In [6]: x = 12345
+In [6]: import numpy
+
+In [7]: %timeit x**2
+10000000 loops, best of 3: 43.7 ns per loop
+
+In [8]: %timeit x*x
+10000000 loops, best of 3: 33.1 ns per loop
+
+In [9]: %timeit numpy.square(x)
+1000000 loops, best of 3: 994 ns per loop
+
+5. There are 24 magic commands.
+
+In [10]: %lsmagic
+Out[10]:
+...
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+
+
+
