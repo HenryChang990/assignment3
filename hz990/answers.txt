@@ -14,6 +14,15 @@ In [4]: num
 Out[4]: 232
 
 
+
+Note: I noticed that the question is asking for the number of files si I think the directories should be excluded.
+So, If we want to calculate the files, we can use this:
+
+ls -l /etc/ | grep -v drw
+
+And num = 102
+
+
 3.
 In [5]: num**0.5
 Out[5]: 15.231546211727817
